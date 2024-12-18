@@ -516,7 +516,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col flex-nowrap items-center justify-center gap-5 overflow-hidden h-min lg:py-[122px] lg:pb-[532px] px-5 pb-[332px] py-[30px] relative">
+      <section className="flex flex-col flex-nowrap items-center justify-center gap-5 overflow-hidden h-min lg:py-[122px] lg:pb-[532px] px-5 pb-[220px] pt-[30px] relative">
         <div className="absolute inset-0">
           <img
             src="https://framerusercontent.com/images/tlFFcOfsDQeOVLdn0rGQStmqCsk.png"
@@ -545,7 +545,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute left-[-182px] right-[-433px] lg:bottom-[-605px] bottom-[219px] aspect-[1.97] flex-none">
+        <div className="absolute left-[-182px] right-[-433px] lg:bottom-[-605px] bottom-[-350px] aspect-[1.97] flex-none">
           <img
             src="https://framerusercontent.com/images/P7264pyjJIDEL91YOP40xlA3fro.png"
             alt=""
