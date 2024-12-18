@@ -933,7 +933,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex absolute lg:left-[-330px] transform rotate-[-1deg] lg:bottom-[-92px] h-[546px] w-[1173px] aspect-[2.147810218978102/1] flex-none">
+        <div className="hidden lg:flex absolute lg:left-[-412px] transform rotate-[-1deg] lg:bottom-[-92px] h-[546px] w-[1173px] aspect-[2.147810218978102/1] flex-none">
           <img
             src="https://framerusercontent.com/images/qlhIPe0aJp0BkXxx2TdwRpUVo.png"
             alt=""
