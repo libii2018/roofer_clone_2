@@ -8,7 +8,7 @@
 export default function Home() {
   return (
     <div>
-      <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600">
+      <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600 lg:py-0 py-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
           <a
             href="https://flowbite.com/"
@@ -21,7 +21,7 @@ export default function Home() {
             />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button className="bg-[#e1a356] p-[14px] group text-white text-[16px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)] hover:bg-white hover:text-[#e1a356]">
+            <button className="lg:flex hidden bg-[#e1a356] p-[14px] group text-white text-[16px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)] hover:bg-white hover:text-[#e1a356]">
               <div className="flex flex-row gap-3">
                 <div className="w-[24px] h-[24px]">
                   <svg
@@ -126,9 +126,9 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <header className="relative flex items-center justify-center h-[125vh] bg-cover bg-center overflow-hidden  bg-gradient-59">
+      <header className="relative flex items-center justify-center lg:h-[125vh] bg-cover bg-center overflow-hidden bg-gradient-59 h-auto lg:py-0 py-8">
         {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
-        <div className="h-[1185px] absolute -right-[974px] top-[35px] w-[160%] aspect-[1.7822784810126582/1]">
+        <div className="h-[1185px] absolute lg:right-[-974px] right-[-294px] top-[-98px] w-[160%] aspect-[1.7822784810126582/1]">
           <div className="absolute inset-0">
             <img
               src="https://framerusercontent.com/images/jtCsMyNN1Bz507p4JRtk26iOSA.png"
@@ -138,7 +138,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-4 text-white lg:w-[1320px]">
+        <div className="container relative z-10 mx-auto px-4 text-white lg:w-[1320px] lg:text-left text-center">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-[110px] font-bold mb-4 md:leading-[110px]">
               Roofing Service in West London.
@@ -147,7 +147,7 @@ export default function Home() {
               From handling insurance communications to coordinating with
               trusted and vetted contractors are taken care of.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex lg:flex-row flex-col gap-6 lg:items-start items-center  space-x-4">
               <button className="bg-[#e1a356] px-[30] py-[26px] text-white text-[18px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)] hover:bg-white hover:text-[#e1a356]">
                 <div className="flex flex-row gap-3">
                   <div className="w-[24px] h-[24px]">
@@ -168,7 +168,7 @@ export default function Home() {
                   <p>Book A Free Consultation</p>
                 </div>
               </button>
-              <button className="px-6 py-3 bg-transparent border-2 border-white text-[18px] font-bold text-white hover:bg-white hover:text-black rounded-lg">
+              <button className="px-[30] py-[26px] bg-transparent border-2 border-white text-[18px] font-bold text-white hover:bg-white hover:text-black rounded-lg">
                 Explore Our Services
               </button>
             </div>
@@ -208,10 +208,10 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="bg-[#f4f4eb] py-16 px-4 lg:px-16">
+      <section className="bg-[#f4f4eb] py-16 lg:px-4 lg:px-16">
         <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-center gap-28">
           {/* Section de l'image */}
-          <div className="lg:w-[45%] w-full h-[584px] aspect-[1.0171232876712328/1] relative overflow-hidden rounded-[16px]">
+          <div className="lg:w-[45%] w-full lg:h-[584px] h-[297px] aspect-[1.0171232876712328/1] relative overflow-hidden rounded-[16px]">
             <img
               src="https://framerusercontent.com/images/X35cosIbFTbHj0jVoH8ZChcxp1Y.jpg"
               alt="Roofing Service"
@@ -220,7 +220,7 @@ export default function Home() {
           </div>
 
           {/* Section du contenu */}
-          <div className="lg:w-[55%] w-full">
+          <div className="lg:w-[55%] w-full lg:px-0 text-center lg:text-left">
             <h2 className="text-4xl md:text-[60px] md:leading-[70px] font-bold text-gray-800 mb-6">
               Reasons to choose <br /> our roofing services.
             </h2>
@@ -229,18 +229,19 @@ export default function Home() {
               years and we are proud to say we are experts in this field. We
               have a team of skilled & qualified members.
             </p>
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-left w-full lg:mx-0 ml-1 lg:pr-0 pr-6">
               <li className="flex items-start">
-                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden mt-1">
+                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden">
                   <img
                     src="https://framerusercontent.com/images/QKMdLLvUQ5QKtJypCiTaLsprazc.svg"
                     alt=""
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="ml-4">
-                  <p className="font-bold text-gray-800">
+                  <p className="font-bold text-[#34342b] text-[19px]">
                     Affordable Prices:
-                    <span className="text-gray-600">
+                    <span className="text-[#34342b] font-extralight text-[19px] leading-[20px]">
                       From free inspections, claim assistance, Roof replacements
                       and home upgrades.
                     </span>
@@ -248,16 +249,17 @@ export default function Home() {
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden mt-1">
+                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden">
                   <img
                     src="https://framerusercontent.com/images/QKMdLLvUQ5QKtJypCiTaLsprazc.svg"
                     alt=""
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="ml-4">
-                  <p className="font-bold text-gray-800">
+                  <p className="font-bold text-[#34342b] text-[19px]">
                     Expert Engineers:
-                    <span className="text-gray-600">
+                    <span className="text-[#34342b] font-extralight text-[19px] leading-[20px]">
                       Our experienced, knowledgeable team is here to guide you
                       through every step of the process.
                     </span>
@@ -265,16 +267,17 @@ export default function Home() {
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden mt-1">
+                <div className="flex flex-row items-center justify-center h-5 w-6 overflow-hidden">
                   <img
                     src="https://framerusercontent.com/images/QKMdLLvUQ5QKtJypCiTaLsprazc.svg"
                     alt=""
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="ml-4">
-                  <p className="font-bold text-gray-800">
+                  <p className="font-bold text-[#34342b] text-[19px]">
                     Quality Materials:
-                    <span className="text-gray-600">
+                    <span className="text-[#34342b] font-extralight text-[19px] leading-[20px]">
                       We understand the importance of protecting your family and
                       investment, and we treat with care.
                     </span>
@@ -287,7 +290,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col bg-[#f4f4eb]">
         <div className="flex flex-col md:flex-row items-start justify-between gap-8 mx-auto px-4 py-12 max-w-[1320px] ">
-          <div className="md:w-1/2 flex flex-col items-start justify-start space-y-6">
+          <div className="md:w-1/2 flex flex-col lg:items-start items-center  justify-start lg:text-left text-center space-y-6">
             <h1 className="text-4xl md:text-[60px] md:leading-[70px] font-bold text-gray-800 mb-6">
               Professional and quality roofing services.
             </h1>
@@ -302,7 +305,7 @@ export default function Home() {
           </div>
 
           <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
                   src="https://framerusercontent.com/images/3Whfnk9xeYHuThItMxHsLozr8.svg"
@@ -310,16 +313,16 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
                   Free Inspection
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
                   src="https://framerusercontent.com/images/9sseofjvdoSNGw1OrsPwt7bA0U.svg"
@@ -327,16 +330,16 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
                   Commercial Roofing
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
                   src="https://framerusercontent.com/images/9XCWyPMau9AXyyigKsiuVZ8HPHU.svg"
@@ -344,16 +347,16 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
                   Roof Replacement
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
                   src="https://framerusercontent.com/images/Ud21hKV9z8wiv761kEzRt0eRJt4.svg"
@@ -361,16 +364,16 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
                   Solar Panels
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
                   src="https://framerusercontent.com/images/VFZFNgIwxUJUbwpWBZ5Su9gY.svg"
@@ -378,27 +381,27 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
                   Damage Repairs
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-4 bg-[#f4f4eb] gap-6">
+            <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
-                  src="https://framerusercontent.com/images/h2oDGruHsEqE4iNvDE1Oo3wRJlE.svg"
+                  src="https://framerusercontent.com/images/VFZFNgIwxUJUbwpWBZ5Su9gY.svg"
                   alt=""
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold font-semibold text-[#34342b]">
-                  Free Inspection
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#34342b]">
+                  Roof Renovation
                 </h3>
-                <p className="text-[#34342b] text-base">
+                <p className="text-[#34342b] text-base text-center lg:text-left">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -407,10 +410,10 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col bg-[#f4f4eb]">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-16 mx-auto px-4 py-12 max-w-[1320px] ">
-          <div className="flex-none h-[719px] overflow-visible relative md:w-[49%] perspective-[1200px]">
-            <div className="relative w-full h-[719px] mx-auto">
-              <div className="absolute left-[37px] top-0 w-[493px] aspect-[1.0138/1] rounded-[8px] h-[291px] overflow-hidden">
+        <div className="flex flex-col md:flex-row items-start justify-between md:gap-16 gap-10 mx-auto px-4 py-12 max-w-[1320px] ">
+          <div className="flex-none lg:h-[719px] h-fit overflow-visible relative md:w-[49%] perspective-[1200px]">
+            <div className="hidden lg:flex relative w-full h-[719px] mx-auto">
+              <div className="absolute left-[37px] top-0 lg:w-[493px] aspect-[1.0138/1] rounded-[8px] h-[291px] overflow-hidden">
                 <img
                   src="https://framerusercontent.com/images/F8yQnLxSgV6sGiAZYpzI5Ig8yk.png"
                   alt="Roofing work"
@@ -445,15 +448,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:w-[51%] flex flex-col items-start justify-start">
+          <div className="md:w-[51%] flex flex-col lg:items-start items-center lg:justify-start justify-center">
             {/* Titre principal */}
-            <h1 className="text-4xl text-[rgb(52, 52, 43)] md:text-[62px] md:leading-[70px] font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl text-[rgb(52, 52, 43)] lg:text-left text-center md:text-[62px] md:leading-[70px] font-bold text-gray-900 mb-6">
               Taking care of the <br className="md:hidden" /> roof of your
               house.
             </h1>
 
             {/* Paragraphe d'introduction */}
-            <p className="text-gray-600 text-[rgb(52, 52, 43)] text-lg mb-12 leading-relaxed">
+            <p className="text-gray-600 text-[rgb(52, 52, 43)] lg:text-left text-center text-lg mb-12 leading-relaxed">
               Your building is your most important asset. Make sure it's
               protected. Storm damage can be latent, causing problems that
               plague you for years to come and we may have a solution to save
@@ -463,15 +466,15 @@ export default function Home() {
             {/* Liste des éléments */}
             <div className="space-y-8">
               {/* Item 1 */}
-              <div className="flex items-start gap-6">
+              <div className="flex lg:w-full lg:flex-row flex-col lg:items-start items-center gap-6">
                 <div className="flex-row w-[70px] h-[70px] bg-[#5f5f57] text-white font-bold rounded-[100%] flex items-center justify-center text-lg border-[3px] border-[#e1a356]">
                   <p className="text-[40px]">1</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-black">
+                  <h3 className="text-xl lg:text-left text-center font-semibold text-black">
                     Solutions
                   </h3>
-                  <p className="text-[#4b5563] text-sm block w-[70%] mt-3 leading-[23px]">
+                  <p className="text-[#4b5563] lg:ml-0 lg:text-left text-center text-[17px] block mx-auto w-[80%] mt-3 leading-[27px]">
                     We'll ensure that you focus on the opportunities that
                     maximize competitive advantage.
                   </p>
@@ -479,15 +482,15 @@ export default function Home() {
               </div>
 
               {/* Item 2 */}
-              <div className="flex items-start gap-6">
+              <div className="flex lg:w-full lg:flex-row flex-col lg:items-start items-center gap-6">
                 <div className="flex-row w-[70px] h-[70px] bg-[#5f5f57] text-white font-bold rounded-[100%] flex items-center justify-center text-lg border-[3px] border-[#e1a356]">
                   <p className="text-[40px]">2</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-black">
+                  <h3 className="text-xl lg:text-left text-center font-semibold text-black">
                     Commercial Services
                   </h3>
-                  <p className="text-[#4b5563] text-sm block w-[70%] mt-3 leading-[23px]">
+                  <p className="text-[#4b5563] lg:ml-0 lg:text-left text-center text-[17px] block mx-auto w-[80%] mt-3 leading-[27px]">
                     We'll ensure that you focus on the opportunities that
                     maximize competitive advantage.
                   </p>
@@ -495,15 +498,15 @@ export default function Home() {
               </div>
 
               {/* Item 3 */}
-              <div className="flex items-start gap-6">
+              <div className="flex lg:w-full lg:flex-row flex-col lg:items-start items-center gap-6">
                 <div className="flex-row w-[70px] h-[70px] bg-[#5f5f57] text-white font-bold rounded-[100%] flex items-center justify-center text-lg border-[3px] border-[#e1a356]">
                   <p className="text-[40px]">3</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-black">
+                  <h3 className="text-xl lg:text-left text-center font-semibold text-black">
                     Supervision
                   </h3>
-                  <p className="text-[#4b5563] text-sm block w-[70%] mt-3 leading-[23px]">
+                  <p className="text-[#4b5563] lg:ml-0 lg:text-left text-center text-[17px] block mx-auto w-[80%] mt-3 leading-[27px]">
                     We'll ensure that you focus on the opportunities that
                     maximize competitive advantage.
                   </p>
@@ -513,7 +516,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col flex-nowrap items-center justify-center gap-5 overflow-hidden h-min py-[122px] pb-[532px] relative">
+      <section className="flex flex-col flex-nowrap items-center justify-center gap-5 overflow-hidden h-min lg:py-[122px] lg:pb-[532px] px-5 pb-[332px] py-[30px] relative">
         <div className="absolute inset-0">
           <img
             src="https://framerusercontent.com/images/tlFFcOfsDQeOVLdn0rGQStmqCsk.png"
@@ -521,20 +524,20 @@ export default function Home() {
             className="block w-full h-full rounded-inherit object-cover object-center"
           />
         </div>
-        <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min max-w-[1320px] w-full overflow-visible px-5 relative">
-          <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min w-full overflow-visible px-16 relative">
-            <div className="flex flex-none flex-row flex-nowrap items-end justify-between h-min w-full overflow-visible p-0 relative">
-              <div className="flex flex-col justify-between w-[55%]">
-                <h2 className="text-4xl md:text-[60px] md:leading-[70px] font-bold text-white mb-6">
+        <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min max-w-[1320px] w-full overflow-visible lg:px-5 relative">
+          <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min w-full overflow-visible lg:px-16 relative">
+            <div className="flex flex-none lg:flex-row flex-col flex-nowrap items-end justify-between h-min w-full overflow-visible p-0 relative">
+              <div className="flex flex-col justify-between lg:w-[55%] w-full lg:mb-0 mb-10">
+                <h2 className="text-4xl md:text-[60px] lg:text-left text-center md:leading-[70px] font-bold text-white mb-6">
                   Are you ready to get your roofing service?
                 </h2>
-                <p className="text-white text-lg lg:text-[18px]">
+                <p className="text-white text-lg lg:text-[18px] lg:text-left text-center leading-[30px]">
                   Our company provides all types of roof repairs, both
                   residential and commercial, regardless of the damage level. We
                   also offer partial tile replacement.
                 </p>
               </div>
-              <div className="flex flex-col items-end justify-end">
+              <div className="flex flex-col lg:items-end mx-auto lg:mx-0 justify-end">
                 <button className="bg-[#606057] px-[30] py-[26px] text-white text-[18px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)]">
                   Book A Free Consultation
                 </button>
@@ -542,7 +545,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute left-[-182px] right-[-433px] bottom-[-605px] aspect-[1.97] flex-none">
+        <div className="absolute left-[-182px] right-[-433px] lg:bottom-[-605px] bottom-[219px] aspect-[1.97] flex-none">
           <img
             src="https://framerusercontent.com/images/P7264pyjJIDEL91YOP40xlA3fro.png"
             alt=""
@@ -550,15 +553,15 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-[#f4f4eb] pt-[130px] pb-[140px] ">
-        <div className="flex flex-col items-center justify-center max-w-[1155px] mx-auto">
-          <div className="flex flex-row items-end justify-between w-full mb-16">
+      <section className="bg-[#f4f4eb] Lg:pt-[130px] lg:pb-[140px] py-20">
+        <div className="flex flex-col items-center justify-center max-w-[1155px] mx-auto px-5">
+          <div className="flex lg:flex-row flex-col lg:items-end items-center lg:justify-between justify-center w-full mb-16">
             {/* En-tête de la section */}
-            <div className="w-[60%] mb-10">
-              <h2 className="text-4xl md:text-[56px] md:leading-[70px] font-bold text-[#34342b] mb-6">
+            <div className="lg:w-[60%] w-full mb-10">
+              <h2 className="text-4xl md:text-[56px] md:leading-[70px] lg:text-left text-center font-bold text-[#34342b] mb-6">
                 See what our clients say
               </h2>
-              <p className="text-[#34342b] text-lg lg:text-[18px]">
+              <p className="text-[#34342b] lg:text-lg text-center lg:text-left text-[18px]">
                 We proudly employ the Industries most dedicated individuals, who
                 are all professionally trained to Roofing service standards for
                 the customers.
@@ -566,14 +569,16 @@ export default function Home() {
             </div>
 
             {/* Évaluation et statistiques */}
-            <div className="flex w-[28%] flex-col justify-end items-start mb-8">
-              <div className="flex text-yellow-500 text-lg ml-3">★ ★ ★ ★ ★</div>
-              <div className="flex items-end gap-2">
-                <p className="text-6xl md:text-[100px] font-bold text-[#adad9f]">
+            <div className="flex lg:w-[28%] w-full flex-col lg:justify-end lg:items-start justify-center items-center mb-8">
+              <div className="flex text-yellow-500 text-5xl lg:text-lg lg:ml-3">
+                ★ ★ ★ ★ ★
+              </div>
+              <div className="flex lg:items-end items-center   lg:flex-row flex-col gap-2">
+                <p className="lg:text-6xl text-9xl md:text-[100px] font-bold text-[#adad9f]">
                   597
                 </p>
                 <div className="text-[#34342b] font-semibold md:text-[14px] text-sm mb-2">
-                  customers have given <br /> ratings for support
+                  customers have given ratings for support
                 </div>
               </div>
             </div>
@@ -582,9 +587,9 @@ export default function Home() {
           {/* Conteneur des témoignages */}
           <div className="flex flex-col md:flex-row gap-6">
             {/* Témoignage 1 */}
-            <div className="bg-white rounded-2xl shadow-lg p-10 flex-1">
-              <div className="flex items-center justify-between gap-4 mb-4">
-                <div className="flex flex-row items-center justify-between gap-4">
+            <div className="bg-white rounded-2xl shadow-lg p-10  flex-1">
+              <div className="flex items-center lg:flex-row flex-col justify-between gap-4 mb-4">
+                <div className="flex flex-row items-center lg:justify-between justify-center gap-4">
                   <img
                     src="https://framerusercontent.com/images/cDioZKgHfk2VzE66TBcoAGajTQ.png"
                     alt="Chieko Chute"
@@ -606,7 +611,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-black text-[16px]">
+              <p className="text-[#434338] text-[17px]">
                 I have worked with Roofing for years and they have consistently
                 done great work not only for me, but now for many of my clients.
                 I would not hesitate to recommend them.
@@ -615,8 +620,8 @@ export default function Home() {
 
             {/* Témoignage 2 */}
             <div className="bg-white rounded-2xl shadow-lg p-10 flex-1">
-              <div className="flex items-center justify-between gap-4 mb-4">
-                <div className="flex flex-row items-center justify-between gap-4">
+              <div className="flex items-center lg:flex-row flex-col justify-between gap-4 mb-4">
+                <div className="flex flex-row items-center lg:justify-between justify-center gap-4">
                   <img
                     src="https://framerusercontent.com/images/UsazcuY32OaGDvo4P5cEUW2EhZM.svg"
                     alt="Cyndy Lillibridge"
@@ -640,7 +645,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-black text-[16px]">
+              <p className="text-[#434338] text-[17px]">
                 I have worked with Roofing for years and they have consistently
                 done great work not only for me, but now for many of my clients.
                 I would not hesitate to recommend them.
@@ -652,11 +657,11 @@ export default function Home() {
       <section className="bg-gray-100 py-16">
         <div className="flex flex-col items-center justify-center max-w-[1320px] mx-auto">
           {/* Titre et texte au centre */}
-          <div className="text-center flex flex-col mb-12 gap-6">
+          <div className="text-center flex flex-col mb-12 gap-6 lg:p-0 p-5">
             <h1 className="text-4xl font-bold text-[#34342b] mb-4 md:text-[64px]">
               Our latest news
             </h1>
-            <div className="w-[60%] h-auto flex mx-auto">
+            <div className="lg:w-[60%] w-full h-auto flex mx-auto">
               <p className="text-[16px] text-[#434338]">
                 Our customers are at the heart of our company, and with over 20
                 years of experience in the industry we understand every articles
@@ -665,7 +670,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-8 lg:p-0 p-5">
             {/* Cartes alignées horizontalement */}
             <div className="flex flex-row justify-center gap-8">
               <div className="rounded-lg overflow-hidden w-full sm:w-[370px]">
@@ -730,14 +735,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 py-16">
-        <div className="flex flex-col items-center justify-center max-w-[1320px] mx-auto">
+      <section className="bg-gray-100 lg:py-16 py-5">
+        <div className="flex flex-col items-center justify-center max-w-[1320px] mx-auto lg:p-0 p-5">
           {/* Titre et texte au centre */}
           <div className="text-center flex flex-col mb-12 gap-6">
             <h1 className="text-4xl font-bold text-[#34342b] mb-4 md:text-[64px]">
               Frequently asked questions.
             </h1>
-            <div className="w-[60%] h-auto flex mx-auto">
+            <div className="lg:w-[60%] w-full h-auto flex mx-auto">
               <p className="text-[16px] text-[#434338]">
                 We offer a wide range of roofing services and products from
                 trusted manufacturers. Our professional team provides renovation
@@ -777,13 +782,13 @@ export default function Home() {
             className="block w-full h-full rounded-inherit object-cover object-center"
           />
         </div>
-        <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min max-w-[1320px] w-full overflow-visible px-5 relative">
-          <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min w-full overflow-visible px-16 relative">
-            <div className="flex flex-none flex-row flex-nowrap items-center justify-between h-min w-full overflow-visible p-0 relative mb-10">
-              <div className="flex flex-col justify-between w-[55%]">
+        <div className="flex flex-none lg:flex-col flex-nowrap items-center justify-center gap-2 h-min lg:max-w-[1320px] w-full overflow-visible px-5 relative">
+          <div className="flex flex-none flex-col flex-nowrap items-center justify-center gap-2 h-min w-full overflow-visible px-0 relative">
+            <div className="flex flex-none flex-col lg:flex-row flex-nowrap items-center justify-between h-min w-full overflow-visible p-0 relative mb-10">
+              <div className="flex flex-col lg:justify-between lg:items-start items-center justify-center w-[216px] mb-10 lg:mb-0">
                 <a
                   href="https://flowbite.com/"
-                  className="flex items-center h-[90px] w-[216px] space-x-3 rtl:space-x-reverse"
+                  className="flex lg:items-start items-center h-[90px] lg:w-[216px] w-full space-x-3 rtl:space-x-reverse"
                 >
                   <img
                     src="https://framerusercontent.com/images/98yMav9J6nGw6CmCxbeLO1jLNOU.svg"
@@ -792,22 +797,22 @@ export default function Home() {
                   />
                 </a>
               </div>
-              <div className="flex flex-col h-full items-start justify-start">
-                <p className="text-[#f4f4eb] text-[18px]">
+              <div className="flex flex-col lg:w-[58%] w-full h-full lg:items-start lg:justify-start items-center justify-center">
+                <p className="text-[#f4f4eb] lg:text-left text-center text-[18px]">
                   Welcome to a place of refinement and clean. This is Roofer, we
                   made for home and office cleaning easy for you.
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-col items-end justify-end">
-              <div className="py-10 w-[58%] pt-16 border-t-[1px] border-[#fff3]">
-                <div className="ml-[40px] grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="w-full flex flex-col lg:items-end lg:justify-end items-center justify-center">
+              <div className="py-10 lg:w-[768px] w-full pt-16 border-t-[1px] border-[#fff3]">
+                <div className="lg:ml-[40px] ml-0 grid grid-cols-1 items-center md:grid-cols-3  gap-8">
                   {/* Colonne 1 */}
-                  <div className="flex flex-col">
+                  <div className="flex flex-col lg:items-start items-center w-full">
                     <h3 className="text-xl text-white text-[13px] opacity-80 font-semibold mb-4">
                       Our Services
                     </h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 text-center lg:text-left">
                       <li>
                         <a
                           href="#"
@@ -844,11 +849,11 @@ export default function Home() {
                   </div>
 
                   {/* Colonne 2 */}
-                  <div className="flex flex-col">
+                  <div className="flex lg:items-start items-center flex-col">
                     <h3 className="text-xl text-white text-[13px] opacity-80 font-semibold mb-4">
                       Quick Links
                     </h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 text-center lg:text-left">
                       <li>
                         <a
                           href="#"
@@ -886,7 +891,7 @@ export default function Home() {
 
                   {/* Colonne 3 */}
                   <div className="flex flex-col">
-                    <ul className="space-y-4">
+                    <ul className="space-y-4 flex flex-col lg:items-start items-center text-center lg:text-left">
                       <li>
                         <span className="text-white text-[14px] font-semibold opacity-80">
                           Call us:
@@ -928,7 +933,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute left-[-330px] transform rotate-[-1deg] bottom-[-92px] h-[546px] w-[1173px] aspect-[2.147810218978102/1] flex-none">
+        <div className="hidden lg:flex absolute lg:left-[-330px] transform rotate-[-1deg] lg:bottom-[-92px] h-[546px] w-[1173px] aspect-[2.147810218978102/1] flex-none">
           <img
             src="https://framerusercontent.com/images/qlhIPe0aJp0BkXxx2TdwRpUVo.png"
             alt=""
