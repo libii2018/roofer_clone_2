@@ -73,51 +73,51 @@ export default function Home() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded md:bg-transparent md:p-0"
+                  className="block py-8 px-[22px] text-[14px] font-semibold text-[#34342b] rounded md:bg-transparent"
                   aria-current="page"
                 >
-                  Home
+                  HOME
                 </a>
               </li>
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
-                  About
+                  ABOUT
                 </a>
               </li>
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
-                  Services
+                  SERVICES
                 </a>
               </li>
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   APPOINTMENT
                 </a>
               </li>
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   CONTACT
                 </a>
               </li>
-              <li className="py-8 px-[22px]">
+              <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
                 <a
                   href="#"
-                  className="block text-[14px] font-semibold text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   BLOG
                 </a>
@@ -128,7 +128,7 @@ export default function Home() {
       </nav>
       <header className="relative flex items-center justify-center lg:h-[125vh] bg-cover bg-center overflow-hidden bg-gradient-59 h-auto lg:py-0 py-8">
         {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
-        <div className="h-[1185px] absolute lg:right-[-974px] right-[-294px] top-[-98px] w-[160%] aspect-[1.7822784810126582/1]">
+        <div className="h-[1185px] absolute lg:right-[-974px] right-[-294px] top-[-60px] w-[160%] aspect-[1.7822784810126582/1]">
           <div className="absolute inset-0">
             <img
               src="https://framerusercontent.com/images/jtCsMyNN1Bz507p4JRtk26iOSA.png"
