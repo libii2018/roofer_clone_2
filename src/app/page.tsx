@@ -7,7 +7,7 @@
 
 export default function Home() {
   return (
-    <div>
+    <>
       <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600 lg:py-0 py-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
           <a
@@ -298,23 +298,31 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col bg-[#f4f4eb]">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8 mx-auto px-4 py-12 max-w-[1320px] ">
-          <div className="md:w-1/2 flex flex-col lg:items-start items-center  justify-start lg:text-left text-center space-y-6">
-            <h1 className="text-4xl md:text-[64px] md:leading-[120%] font-bold text-[#434338] mb-6">
-              Professional and quality roofing services.
-            </h1>
-            <p className="text-[#434338] font-normal lg:text-[18px] mb-9 leading-[170%]">
-              Our company provides all types of roof repairs, both residential
-              and commercial, regardless of the damage level. We also offer
-              partial tile replacement.
-            </p>
-            <button className="bg-[#e1a356] px-[30] py-[26px] text-[#434338] text-[18px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)]">
-              View All Services
-            </button>
+      <section className="flex flex-col bg-[#f4f4eb] lg:pt-4 lg:pb-[108px]">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 mx-auto px-5 max-w-[1320px] ">
+          <div className="md:w-[42%] flex flex-col lg:items-start items-center justify-start lg:text-left text-center gap-[40px]">
+            <div className="flex flex-col items-start justify-start gap-6">
+              <div className="flex flex-col">
+                <h1 className="text-4xl md:text-[64px] md:leading-[120%] font-bold text-[#434338]">
+                  Professional and quality roofing services.
+                </h1>
+              </div>
+              <div className="flex flex-col">
+                <p className="text-[#434338] font-normal lg:text-[18px] leading-[170%]">
+                  Our company provides all types of roof repairs, both
+                  residential and commercial, regardless of the damage level. We
+                  also offer partial tile replacement.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <button className="bg-[#e1a356] px-[30] py-[26px] text-[#434338] text-[18px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)]">
+                View All Services
+              </button>
+            </div>
           </div>
 
-          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="md:w-[45%] grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex flex-col lg:items-start items-center p-4 bg-[#f4f4eb] gap-6">
               <div className="flex flex-col items-start justify-start w-[32px] h-[32px]">
                 <img
@@ -323,10 +331,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338] leading-[130%]">
                   Free Inspection
                 </h3>
-                <p className="text-[#434338] text-base text-center lg:text-left">
+                <p className="text-[#434338] text-base text-center lg:text-left ">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -340,10 +348,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338] leading-[130%]">
                   Commercial Roofing
                 </h3>
-                <p className="text-[#434338] text-base text-center lg:text-left">
+                <p className="text-[#434338] text-base text-center lg:text-left ">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -357,10 +365,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338] leading-[130%]">
                   Roof Replacement
                 </h3>
-                <p className="text-[#434338] text-base text-center lg:text-left">
+                <p className="text-[#434338] text-base text-center lg:text-left ">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -391,10 +399,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338] leading-[130%]">
                   Damage Repairs
                 </h3>
-                <p className="text-[#434338] text-base text-center lg:text-left">
+                <p className="text-[#434338] text-base text-center lg:text-left ">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -408,10 +416,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:w-[241px]">
-                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338]">
+                <h3 className="text-xl lg:text-[24px] lg:font-bold text-center lg:text-left font-semibold text-[#434338] leading-[130%]">
                   Roof Renovation
                 </h3>
-                <p className="text-[#434338] text-base text-center lg:text-left">
+                <p className="text-[#434338] text-base text-center lg:text-left ">
                   Our team is experienced in handling everything repairs.
                 </p>
               </div>
@@ -1060,6 +1068,6 @@ export default function Home() {
           />
         </div>
       </footer>
-    </div>
+    </>
   );
 }
