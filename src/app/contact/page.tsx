@@ -1,12 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
   return (
     <>
-      <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600 lg:py-0 py-4">
+  <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600 lg:py-0 py-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
-          <a
-            href="https://flowbite.com/"
+          <Link
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -14,7 +15,7 @@ export default function Contact() {
               className="h-12"
               alt="Flowbite Logo"
             />
-          </a>
+          </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button className="lg:flex hidden bg-[#e1a356] p-[14px] group text-white text-[16px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)] hover:bg-white hover:text-[#e1a356]">
               <div className="flex flex-row gap-3">
@@ -25,9 +26,9 @@ export default function Contact() {
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     stroke="#fff"
                     className="hover:group-hover:text-[#e1a356]"
                   >
@@ -55,9 +56,9 @@ export default function Contact() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
@@ -69,53 +70,52 @@ export default function Contact() {
           >
             <ul className="flex flex-col font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="block py-8 px-[22px] text-[14px] font-semibold text-[#34342b] rounded md:bg-transparent"
-                  aria-current="page"
                 >
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   ABOUT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   SERVICES
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/appointment"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   APPOINTMENT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   CONTACT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   BLOG
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

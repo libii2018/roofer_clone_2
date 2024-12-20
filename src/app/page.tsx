@@ -5,13 +5,15 @@
 //   AccordionTrigger,
 // } from "@/components/ui/accordion";
 
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       <nav className="bg-white dark:bg-gray-900 w-full h-fit border-b border-gray-200 dark:border-gray-600 lg:py-0 py-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
-          <a
-            href="https://flowbite.com/"
+          <Link
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -19,7 +21,7 @@ export default function Home() {
               className="h-12"
               alt="Flowbite Logo"
             />
-          </a>
+          </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button className="lg:flex hidden bg-[#e1a356] p-[14px] group text-white text-[16px] font-bold rounded-md shadow-[0_4px_0_rgba(0,0,0,0.1)] hover:bg-white hover:text-[#e1a356]">
               <div className="flex flex-row gap-3">
@@ -30,9 +32,9 @@ export default function Home() {
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     stroke="#fff"
                     className="hover:group-hover:text-[#e1a356]"
                   >
@@ -60,9 +62,9 @@ export default function Home() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
@@ -74,53 +76,52 @@ export default function Home() {
           >
             <ul className="flex flex-col font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="block py-8 px-[22px] text-[14px] font-semibold text-[#34342b] rounded md:bg-transparent"
-                  aria-current="page"
                 >
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   ABOUT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   SERVICES
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/appointment"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   APPOINTMENT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   CONTACT
-                </a>
+                </Link>
               </li>
               <li className="cursor-pointer border-t-2 hover:border-[#e1a356] hover:bg-[#f4f4eb]">
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="py-8 px-[22px] block w-full h-full text-[14px] font-semibold text-[#34342b] rounded"
                 >
                   BLOG
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -158,9 +159,9 @@ export default function Home() {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       stroke="#fff"
                     >
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -601,9 +602,9 @@ export default function Home() {
                         height="24"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         stroke="#fff"
                         className="hover:group-hover:text-[#e1a356]"
                       >
